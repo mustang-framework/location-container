@@ -3,6 +3,7 @@
 namespace App\Containers\Vendor\Location\Models;
 
 use App\Ship\Parents\Models\Model as ParentModel;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 class Address extends ParentModel
 {
@@ -22,4 +23,9 @@ class Address extends ParentModel
      * A resource key to be used in the serialized responses.
      */
     protected string $resourceKey = 'Address';
+
+    public function addressable(): MorphTo
+    {
+        return $this->morphTo();
+    }
 }

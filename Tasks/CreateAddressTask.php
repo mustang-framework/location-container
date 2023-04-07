@@ -2,23 +2,23 @@
 
 namespace App\Containers\Vendor\Location\Tasks;
 
-use App\Containers\Vendor\Location\Data\Repositories\LocationRepository;
-use App\Containers\Vendor\Location\Models\Location;
+use App\Containers\Vendor\Location\Data\Repositories\AddressRepository;
+use App\Containers\Vendor\Location\Models\Address;
 use App\Ship\Exceptions\CreateResourceFailedException;
 use App\Ship\Parents\Tasks\Task as ParentTask;
 use Exception;
 
-class CreateLocationTask extends ParentTask
+class CreateAddressTask extends ParentTask
 {
     public function __construct(
-        protected LocationRepository $repository
+        protected AddressRepository $repository
     ) {
     }
 
     /**
      * @throws CreateResourceFailedException
      */
-    public function run(array $data): Location
+    public function run(array $data): Address
     {
         try {
             return $this->repository->create($data);

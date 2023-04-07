@@ -2,18 +2,18 @@
 
 namespace App\Containers\Vendor\Location\Tasks;
 
-use App\Containers\Vendor\Location\Data\Repositories\LocationRepository;
-use App\Containers\Vendor\Location\Models\Location;
+use App\Containers\Vendor\Location\Data\Repositories\AddressRepository;
+use App\Containers\Vendor\Location\Models\Address;
 use App\Ship\Exceptions\NotFoundException;
 use App\Ship\Exceptions\UpdateResourceFailedException;
 use App\Ship\Parents\Tasks\Task as ParentTask;
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
-class UpdateLocationTask extends ParentTask
+class UpdateAddressTask extends ParentTask
 {
     public function __construct(
-        protected LocationRepository $repository
+        protected AddressRepository $repository
     ) {
     }
 
@@ -21,7 +21,7 @@ class UpdateLocationTask extends ParentTask
      * @throws NotFoundException
      * @throws UpdateResourceFailedException
      */
-    public function run(array $data, $id): Location
+    public function run(array $data, $id): Address
     {
         try {
             return $this->repository->update($data, $id);

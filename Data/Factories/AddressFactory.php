@@ -2,12 +2,12 @@
 
 namespace App\Containers\Vendor\Location\Data\Factories;
 
-use App\Containers\Vendor\Location\Models\Location;
+use App\Containers\Vendor\Location\Models\Address;
 use App\Ship\Parents\Factories\Factory as ParentFactory;
 
-class LocationFactory extends ParentFactory
+class AddressFactory extends ParentFactory
 {
-    protected $model = Location::class;
+    protected $model = Address::class;
 
     public function definition(): array
     {

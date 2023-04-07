@@ -3,14 +3,14 @@
 namespace App\Containers\Vendor\Location\Tasks;
 
 use Mustang\Core\Exceptions\CoreInternalErrorException;
-use App\Containers\Vendor\Location\Data\Repositories\LocationRepository;
+use App\Containers\Vendor\Location\Data\Repositories\AddressRepository;
 use App\Ship\Parents\Tasks\Task as ParentTask;
 use Prettus\Repository\Exceptions\RepositoryException;
 
-class GetAllLocationsTask extends ParentTask
+class GetAllAddressesTask extends ParentTask
 {
     public function __construct(
-        protected LocationRepository $repository
+        protected AddressRepository $repository
     ) {
     }
 

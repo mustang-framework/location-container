@@ -22,4 +22,9 @@ class City extends ParentModel
      * A resource key to be used in the serialized responses.
      */
     protected string $resourceKey = 'City';
+
+    public function addresses(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Address::class, 'city_id', 'id');
+    }
 }

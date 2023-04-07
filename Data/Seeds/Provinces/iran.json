@@ -1,0 +1,43 @@
+[
+    {"name": "Ardabil", "local_name": "اردبيل", "ISO": "AR", "area_code": 45},
+    {"name": "Esfahan", "local_name": "اصفهان", "ISO": "ES", "area_code": 31},
+    {"name": "Alborz", "local_name": "البرز", "ISO": "AL", "area_code": 26},
+    {"name": "Ilam", "local_name": "ايلام", "ISO": "IL", "area_code": 84},
+    {"name": "Azarbaijan Sharghi", "local_name": "آذربايجان شرقي", "ISO": "AS", "area_code": 41},
+    {"name": "Azarbaijan Gharbi", "local_name": "آذربايجان غربي", "ISO": "AG", "area_code": 44},
+    {"name": "Boushehr", "local_name": "بوشهر", "ISO": "BU", "area_code": 77},
+    {"name": "Tehran", "local_name": "تهران", "ISO": "TH", "area_code": 21},
+    {"name": "Chaharmahal and Bakhtiari", "local_name": "چهارمحال وبختياري", "ISO": "CB", "area_code": 38},
+    {"name": "Khorasan Jonubi", "local_name": "خراسان جنوبي", "ISO": "KJ", "area_code": 56},
+    {"name": "Khorasan Razavi", "local_name": "خراسان رضوي", "ISO": "KR", "area_code": 51},
+    {"name": "Khorasan Shomali", "local_name": "خراسان شمالي", "ISO": "KS", "area_code": 58},
+    {"name": "Khouzestan", "local_name": "خوزستان", "ISO": "KZ", "area_code": 61},
+    {"name": "Zanjan", "local_name": "زنجان", "ISO": "ZN", "area_code": 24},
+    {"name": "Semnan", "local_name": "سمنان", "ISO": "SM", "area_code": 23},
+    {"name": "Sistan and Baluchestan", "local_name": "سيستان وبلوچستان", "ISO": "SB", "area_code": 54},
+    {"name": "Fars", "local_name": "فارس", "ISO": "FR", "area_code": 71},
+    {"name": "Qazvin", "local_name": "قزوين", "ISO": "QZ", "area_code": 28},
+    {"name": "Qom", "local_name": "قم", "ISO": "QM", "area_code": 25},
+    {"name": "Kordestan", "local_name": "كردستان", "ISO": "KD", "area_code": 87},
+    {"name": "Kerman", "local_name": "كرمان", "ISO": "KN", "area_code": 34},
+    {"name": "Kermanshah", "local_name": "كرمانشاه", "ISO": "KM", "area_code": 83},
+    {"name": "Kohgiluyeh and BoyerAhmad", "local_name": "كهگيلويه وبويراحمد", "ISO": "KB", "area_code": 74},
+    {"name": "Golestan", "local_name": "گلستان", "ISO": "GL", "area_code": 17},
+    {"name": "Gilan", "local_name": "گيلان", "ISO": "GI", "area_code": 13},
+    {"name": "Lorestan", "local_name": "لرستان", "ISO": "LR", "area_code": 66},
+    {"name": "Mazandaran", "local_name": "مازندران", "ISO": "MZ", "area_code": 11},
+    {"name": "Markazi", "local_name": "مركزي", "ISO": "MK", "area_code": 86},
+    {"name": "Hormozgan", "local_name": "هرمزگان", "ISO": "HR", "area_code": 76},
+    {"name": "Hamedan", "local_name": "همدان", "ISO": "HM", "area_code": 81},
+    {"name": "Yazd", "local_name": "يزد", "ISO": "YZ", "area_code": 35}
+]
+
+
+
+
+
+
+
+
+
+

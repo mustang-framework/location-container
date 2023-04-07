@@ -2,17 +2,17 @@
 
 namespace App\Containers\Vendor\Location\Tasks;
 
-use App\Containers\Vendor\Location\Data\Repositories\LocationRepository;
+use App\Containers\Vendor\Location\Data\Repositories\AddressRepository;
 use App\Ship\Exceptions\DeleteResourceFailedException;
 use App\Ship\Exceptions\NotFoundException;
 use App\Ship\Parents\Tasks\Task as ParentTask;
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
-class DeleteLocationTask extends ParentTask
+class DeleteAddressTask extends ParentTask
 {
     public function __construct(
-        protected LocationRepository $repository
+        protected AddressRepository $repository
     ) {
     }
 
