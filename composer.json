@@ -8,7 +8,7 @@
     "extra": {
         "mustang": {
             "container": {
-                "name": "location"
+                "name": "Location"
             }
         }
     }
