@@ -1,6 +1,15 @@
 {
     "name": "mustang-framework/location-container",
     "description": "Location Container for Mustang Framework.",
+    "type": "mustang-container",
+    "license": "MIT",
     "require": {
+    },
+    "extra": {
+        "mustang": {
+            "container": {
+                "name": "location"
+            }
+        }
     }
 }
