@@ -20,6 +20,6 @@ class GetAllProvincesTask extends ParentTask
      */
     public function run(): mixed
     {
-        return $this->addRequestCriteria()->repository->paginate();
+        return $this->addRequestCriteria()->repository->all();
     }
 }

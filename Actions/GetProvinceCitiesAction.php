@@ -2,12 +2,22 @@
 
 namespace App\Containers\Vendor\Location\Actions;
 
+use App\Containers\Vendor\Location\Tasks\GetProvinceCitiesTask;
+use App\Containers\Vendor\Location\UI\API\Requests\GetProvinceCitiesRequest;
 use App\Ship\Parents\Actions\Action as ParentAction;
+use Mustang\Core\Exceptions\CoreInternalErrorException;
+use Prettus\Repository\Exceptions\RepositoryException;
 
 class GetProvinceCitiesAction extends ParentAction
 {
-    public function run()
+    /**
+     * @param  GetProvinceCitiesRequest  $request
+     * @return mixed
+     * @throws CoreInternalErrorException
+     * @throws RepositoryException
+     */
+    public function run(GetProvinceCitiesRequest $request): mixed
     {
-        // $var = app(Task::class)->run($arg1, $arg2);
+        return app(GetProvinceCitiesTask::class)->run($request->province_id);
     }
 }

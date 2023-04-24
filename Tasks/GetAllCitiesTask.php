@@ -18,8 +18,10 @@ class GetAllCitiesTask extends ParentTask
      * @throws CoreInternalErrorException
      * @throws RepositoryException
      */
-    public function run(): mixed
+    public function run(bool $skipPagination = false): mixed
     {
-        return $this->addRequestCriteria()->repository->paginate();
+        $repository = $this->addRequestCriteria()->repository;
+
+        return $skipPagination ? $repository->all() : $repository->paginate();
     }
 }

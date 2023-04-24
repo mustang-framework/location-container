@@ -4,6 +4,7 @@ namespace App\Containers\Vendor\Location\UI\API\Transformers;
 
 use App\Containers\Vendor\Location\Models\City;
 use App\Ship\Parents\Transformers\Transformer as ParentTransformer;
+use League\Fractal\Resource\Collection;
 
 class CityTransformer extends ParentTransformer
 {
@@ -24,15 +25,14 @@ class CityTransformer extends ParentTransformer
 
         return $this->ifAdmin([
             'real_id'             => $city->id,
+            'province_id'         => $city->province_id,
+            'name'                => $city->name,
+            'local_name'          => $city->local_name,
+            'slug'                => $city->slug,
             'created_at'          => $city->created_at,
             'updated_at'          => $city->updated_at,
             'readable_created_at' => $city->created_at->diffForHumans(),
             'readable_updated_at' => $city->updated_at->diffForHumans(),
-            'province_id'         => $city->province_id,
-            'province'            => $city->province(),
-            'name'                => $city->name,
-            'local_name'          => $city->local_name,
-            'slug'                => $city->slug,
         ], $response);
     }
 }
