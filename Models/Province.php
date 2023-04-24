@@ -3,19 +3,17 @@
 namespace App\Containers\Vendor\Location\Models;
 
 use App\Ship\Parents\Models\Model as ParentModel;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Province extends ParentModel
 {
     protected $fillable = [
-
-    ];
-
-    protected $hidden = [
-
-    ];
-
-    protected $casts = [
-
+        'country_id',
+        'name',
+        'local_name',
+        'slug',
+        'code',
+        'area_code',
     ];
 
     /**
@@ -23,7 +21,7 @@ class Province extends ParentModel
      */
     protected string $resourceKey = 'Province';
 
-    public function cities(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function cities(): HasMany
     {
         return $this->hasMany(City::class, 'province_id', 'id');
     }
